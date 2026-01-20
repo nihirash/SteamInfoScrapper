@@ -48,6 +48,8 @@ func main() {
 		os.Exit(0)
 	}()
 
+	log.Print("Everything is ready!")
+
 	telegramService.ProcessLoop()
 
 }

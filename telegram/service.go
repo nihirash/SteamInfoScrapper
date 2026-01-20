@@ -84,6 +84,8 @@ func (svc *Service) StartCommand(chatId int64) {
 func (svc *Service) ProcessLoop() {
 	channel := svc.TgPort.ReceiveMessages()
 
+	log.Print("Processing telegram messages!")
+
 	for update := range channel {
 		if update.Message == nil {
 			continue

@@ -69,7 +69,7 @@ func (p *Page) Print() {
 	fmt.Printf("About The Game: %s\n", p.AboutTheGame)
 	fmt.Printf("Short Description: %s\n", p.ShortDescription)
 	fmt.Printf("Release Date: %s\n", p.ReleaseDate)
-	fmt.Printf("Reviews: %s\n", p.Review)
+	fmt.Printf("Reviews: %s\n", p.Review.Description)
 	fmt.Printf("Developer: %s\n", p.Developer)
 	fmt.Printf("Publisher: %s\n", p.Publisher)
 	fmt.Printf("Platforms: %s\n", p.Platforms)

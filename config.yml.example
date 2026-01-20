@@ -1,0 +1,6 @@
+steam:
+  api_key: "I don't know"
+  one_task_timeout_sec: 30
+
+telegram:
+  bot_token: "YOUR TELEGRAM BOT TOKEN"

@@ -22,7 +22,7 @@ A Telegram bot that collects Steam game information and generates CSV reports. T
 
 1. Clone the repository:
 ```bash
-git clone git@github.com:nihirash/SteamInfoScrapper.git
+git clone https://github.com/nihirash/SteamInfoScrapper.git
 cd SteamInfoScrapper
 ```
 

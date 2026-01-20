@@ -9,6 +9,7 @@ import (
 
 	"github.com/Jleagle/steam-go/steamapi"
 	"github.com/go-rod/rod"
+	"github.com/go-rod/rod/lib/launcher"
 	"github.com/go-rod/rod/lib/proto"
 )
 
@@ -24,7 +25,8 @@ func NewSteamApiAdapter(apiKey string, oneTaskTimeout int) *SteamAdapter {
 	client := steamapi.NewClient()
 	client.SetKey(apiKey)
 
-	browser := rod.New().MustConnect()
+	u := launcher.New().NoSandbox(true).MustLaunch()
+	browser := rod.New().ControlURL(u).MustConnect()
 
 	return &SteamAdapter{client: client, browser: browser, timeout: oneTaskTimeout}
 }

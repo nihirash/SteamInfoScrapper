@@ -1,5 +1,7 @@
 # SteamInfoScrapper
 
+[![Go](https://github.com/nihirash/SteamInfoScrapper/actions/workflows/go.yml/badge.svg)](https://github.com/nihirash/SteamInfoScrapper/actions/workflows/go.yml)
+
 A Telegram bot that collects Steam game information and generates CSV reports. The bot receives Steam game URLs via Telegram messages and returns detailed game information in CSV format.
 
 ## Features
